@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Storage App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a href="/">Simple Storage App</a>
+    <div class="parent">
+      <div class="component">
+        <button id="connectButton" onclick="connect()">Connect!</button>
+        <br />
+        <p id="address"></p>
+      </div>
+      <div class="getBalance">
+        <button id="getBalance" onclick="getBalance()">Get Balance</button>
+        <p id="balance"></p>
+      </div>
+    </div>
+    <div class="mood">
+      <p>Here we can set or get the mood:</p>
+      <label for="mood">Input Mood:</label> <br />
+      <input type="text" id="mood" />
+      <p id="getMood"></p>
+      <button onclick="getMood()">Get Mood</button>
+      <button onclick="setMood()">Set Mood</button>
+    </div>
+    <div></div>
+ 
+    <script
+      src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+      type="application/javascript"
+    ></script>
+    <script src="script.js"></script>
+    <byline
+      >By<h3>
+        <a href="https://twitter.com/pratham_eth" target="_blank">Prathamesh</a>
+      </h3></byline
+    >
+  </body>
+</html>
